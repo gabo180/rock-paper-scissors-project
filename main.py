@@ -48,6 +48,33 @@ else:
   computer_choice = scissors
 
 print(user_choice)
-
-print("\n\n\nComputer chose: \n\n\n")
+print("\nComputer chose:\n")
 print(computer_choice)
+
+#1 wins against 0
+#2 wins against 1
+#0 wins against 2
+if user_choice == 0:
+  if computer_choice == 1:
+    print("You lose!")
+  elif computer_choice == 2:
+    print("You Win!")
+  else:
+    print("Draw")
+
+if user_choice == 1:
+  if computer_choice == 1:
+    print("Draw")
+  elif computer_choice == 2:
+    print("You lose!")
+  else:
+    print("You Win!")
+
+if user_choice == 2:
+  if computer_choice == 1:
+    print("You Win!")
+  elif computer_choice == 2:
+    print("Draw")
+  else:
+    print("You lose!")
+
